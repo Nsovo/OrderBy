@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="myFunction()">Order by Age</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+   var persons =[["John",28],
+				["Steve",27],
+				["Nsovo",30]];
+
+   persons.sort(function(a,b) {
+  	 return a[1] - b[1];
+  });
+
+  document.getElementById("demo").innerHTML = persons;
+}
+</script>
+
+</body>
+</html>
